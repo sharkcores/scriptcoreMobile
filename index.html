@@ -3,23 +3,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScriptCore/Home - Mobile</title>
-    <link rel="stylesheet" href="C:\Users\Alex\Desktop\vs\ScriptCore.css">
+    <title>ScriptCore/Home</title>
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="https://www.fomei.com/ew/ew_images/image_of_object?ObjectIdentifier=pli:2086d47b-689e-4810-8471-0ec4faf02533&Filter=85137656-c904-4612-b68a-427bba3d9247&ImageIndex=0&FailImage=bc5af4e7-5c19-45bc-b8a0-4a183c53d6ea">
 </head>
 <body>
 
 
     <style>
 
-.divtest::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
+body::-webkit-scrollbar {
+    width: 1px;               /* width of the entire scrollbar */
   }
-  .divtest::-webkit-scrollbar-track {
+  body::-webkit-scrollbar-track {
     background: rgb(14, 14, 14);        /* color of the tracking area */
   }
-  .divtest::-webkit-scrollbar-thumb {
+  body::-webkit-scrollbar-thumb {
     background-color: rgb(29, 29, 29);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid rgb(63, 63, 63);  /* creates padding around scroll thumb */
@@ -47,6 +47,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    user-select: none;
 }
 body{
     background-position: center;
@@ -60,7 +61,7 @@ body{
    margin-top:  10px;
 }
 .MainContent{
-    margin-top: 150px;
+    margin-top: 140px;
     display: flex;
     display: block;
     align-items: center;
@@ -70,53 +71,60 @@ body{
 border-radius: none;
 background-color: transparent;
 margin-bottom: 20px;
-border-radius: 0px;
+border-radius: 0px; 
+background-color:  rgb(29, 29, 29);
 transition: 0.3s;
+border-radius: 5px;
 }
 
-
-
-.TypeBox2{
+.MainContent{ width: auto; height: auto; }
+#TypeBox2{
     border-style: none;
     outline: none;
     text-align: center;
     height: 30px;
     transition: 0.3s;
     user-select: none;
-    font-size: medium;
+    font-size: small;
     background-color: white;
     color: white;
     box-shadow: 0px 0px 10px orangered;
     border: 1px orangered solid;
 border-radius: none;
 background-color: transparent;
-
+width: 200px;
+margin-left: -0px;
 }
-.SearchBtn{
+#SearchBtn{
     border-style: none;
-    padding-left: 25px;
+    padding-left: 8px;
     padding-right: 25px;
     background-color: orangered;
     color: white;
     height: 30px;
-
     transition:  0.3s;
     user-select: none;
     box-shadow: 0px 0px 10px orangered;
     border: 1px orangered solid;
 border-radius: none;
 background-color: transparent;
-
+width: 60px;
+margin-top: -51px;
+margin-left: 148px;
+text-align: start;
 }
 
+
 .Topbarrr{
-    background-color: black;
+    background-color:  rgb(29, 29, 29);
     z-index: 999;
     user-select: none;
     width: 100vw;
     position: fixed;
     margin-top: -8px;
-    
+    box-shadow: 0px 0px 20px rgb(8, 8, 8);
+    border: 1px black solid;
+border-radius: none;
 }
 
 .Btn1, .Btn2{
@@ -125,21 +133,23 @@ background-color: transparent;
     border-radius: 5px;
     width: 100px;
     height: 40px;
-    background-color: black;
+    background-color:  rgb(29, 29, 29);
     font-size: larger;
     color: white;
     font-family: sans-serif;
     margin-right: 10px;
 transition: 0.3s;
 }
-
+.Btn2{
+    color:orangered
+}
 
 
 .link{
-    color: black;
+    color: transparent;
 }
 
-.Scripts, .Scripts2{
+#Scripts, #Scripts2{
     height: 35px;
     background-color: black;
     color: white;
@@ -147,35 +157,166 @@ transition: 0.3s;
     border-style: none;
 background-color: orangered;
 user-select: none;
-transition: 0.3s;
-display: inline-block;
 box-shadow: 0px 0px 10px orangered;
+transition: 0.2s;
+display: inline-block;
+border-width: 1px;
     border: 1px orangered solid;
 border-radius: none;
 background-color: transparent;
 color: white;
 background-color: rgb(20, 20, 20);
-
+transition: 0.3s;
 }
 
-.tags{
+#tags{
    border-style: none;
    height: 35px;
-   transition: 0.5s;
+   transition: 0.3s;
    box-shadow: 0px 0px 10px orangered;
+   border-width: 1px;
     border: 1px orangered solid;
 border-radius: none;
 background-color: transparent;
 color: white;
 background-color: rgb(20, 20, 20);
-margin-left: -5px;
+margin-left: -4px;
+margin-top: -5px;
+border-width: 1px;
 }
-
 ::placeholder { 
   color: white;
   opacity: 1; 
 }
-    </style>
+.link3{
+    color: black;
+}
+.taskbar{
+    background-color: black;
+    z-index: 999;
+    width: 99.99vw;
+    height: 500px;
+    margin-top: 30vw;
+    margin-bottom: -10px;
+    align-items: center;
+    user-select: none;
+    margin-top: 300px;
+}
+.BTN{
+    align-items: center;
+    text-align: center;
+    color: green;
+    font-family: sans-serif;
+    font-size: larger;
+}
+.V{
+    background-color: transparent;
+    font-family: sans-serif;
+    color: white;
+    font-size: larger;
+    margin-bottom: 50px;
+    border-style: none;
+}
+.break{
+    color: gray;
+}
+
+#categories{
+    width: 230px;
+    height: 200px;
+    box-shadow: 0px 0px 10px orangered;
+   border-width: 1px;
+    border: 1px orangered solid;
+border-radius: none;
+background-color: transparent;
+user-select: none;
+}
+#Alls1, #Alls2{
+    width:50px;
+    width: 70px;
+    text-align: center;
+    border-style: solid;
+    box-shadow: 0px 0px 10px orangered;
+    border-width: 1px;
+    border: 1px orangered solid;
+    background-color: transparent;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0s;
+    display: inline-block;
+
+}
+#awd{
+    width:80px;
+    height: 30px;
+    text-align: center;
+    border-style: solid;
+    box-shadow: 0px 0px 10px orangered;
+    border-width: 1px;
+    border: 1px orangered solid;
+    background-color: transparent;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 0px;
+    margin-left: 0px;
+    transition: 0s;
+    display: inline-block;
+    transition: 0.3s;
+}
+#Close{
+    text-align: center;
+    border-style: solid;
+    box-shadow: 0px 0px 10px orangered;
+    border-width: 1px;
+    border: 1px orangered solid;
+    background-color: transparent;
+    color: white;
+    font-family: sans-serif;
+    display: inline-block;
+    margin-top: 85px;
+    height: 50px;
+    width: 200px;
+    font-size: 35px;
+    margin-left: 15px;
+}
+#close:hover{
+    background-color: black;
+}
+#helpbox{
+    display: inline-block;
+    margin-left: 0px;
+    margin-top: -0px;
+    border-style: solid;
+    box-shadow: 0px 0px 10px orangered;
+    border-width: 1px;
+    border: 1px orangered solid;
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    width: 100px;
+    transition: 0.3s;
+}
+#helppox{
+    width: 170px;
+    height: 170px;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px orangered;
+    border-width: 1px;
+    border: 1px orangered solid;
+    color: white;
+    margin-left: -0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.phelper{
+    font-family: sans-serif;
+    font-size: medium;
+    margin-left: 18px;
+}
+ </style>
 <div class="Topbarrr">
 
     <a class="link" href="https://sharkcores.github.io/scriptcoreMobile/">
@@ -214,21 +355,147 @@ margin-left: -5px;
 </div>
 
 
-        <div style="background-color: black; border-radius: 10px; border: 1px black solid;" class="MainContent">   
+        <div class="MainContent">   
         <h1 class="Title">   ScriptCore   </h1> <br>
         <p class="slogan">Greatest Script Libary</p>
+
+
+
         
     </div>
-    <h1 class="TypeBox"> <input class="TypeBox2" type="text" placeholder="Search the Libary"> </h1> 
+  
+
+    
+    
+
+    <h1 class="TypeBox"> <input id="TypeBox2" type="text" placeholder="Search the Libary"> </h1> 
 
 
-<a href="https://sharkcores.github.io/IssueMobile/"><button class="SearchBtn">Search</button></a>
+<a href="https://sharkcores.github.io/Issue/" id="fakenews"><button id="SearchBtn">Search</button></a>
+<button id="awd">Check</button>
+<p>
 
-<p class="Scripts2">
-    <select name="Scripts" class="Scripts">
-      <option value="NewestScripts">All Scripts</option>
-    </select>
-    <a href="https://sharkcores.github.io/ScriptsMobile/"><Button class="tags">Find</Button></a>
+<button id="Scripts">All Scripts</button>
+    <a href="https://sharkcores.github.io/ScriptsMobile/" id="tagss"><Button id="tags">Search</Button></a>
 </p>
+
+
+
+
+<div>
+    <button id="helpbox">Help</button>
+</div>
+<div id="helppox">
+    <p class="phelper">What you can seach <br><br><br>1. "all scripts"
+        <br><br><br>2. "bypass scripts"
+    </p>
+</div>
+
+<div id="categories">
+    <button id="Alls1">All Scripts</button>
+    <button id="Alls2">Bypass Scripts</button>
+    <button id="Close">Close</button>
+
+
+   
+
+</div>
+
+</p>
+
+<script>
+    document.getElementById("helppox").style.width="0px"
+    document.getElementById("helppox").style.height="0px"
+    document.getElementById("helppox").style.visibility="hidden"
+    document.getElementById("helpbox").onmouseleave = function(){
+        document.getElementById("helppox").style.visibility="hidden"
+        document.getElementById("helppox").style.height="0px"
+        document.getElementById("helppox").style.width="0px"
+        document.getElementById("categories").style.width="230px"
+                        document.getElementById("categories").style.height="200px"
+
+    }
+    document.getElementById("helpbox").onmouseenter = function(){
+        document.getElementById("helppox").style.visibility="visible"
+        document.getElementById("helppox").style.height="170px"
+        document.getElementById("helppox").style.width="170px"
+        if(document.getElementById("categories").style.visibility="visible"){
+            document.getElementById("categories").style.visibility="hidden"
+            document.getElementById("categories").style.width="0px"
+                        document.getElementById("categories").style.height="0px"
+
+        }
+       else if(document.getElementById("categories").style.visibility="hidden"){
+            document.getElementById("categories").style.visibility="hidden"
+            document.getElementById("categories").style.width="0px"
+                        document.getElementById("categories").style.height="0px"
+                       
+        }
+    }
+    
+    document.getElementById("SearchBtn").onclick = function(){
+        document.getElementById("TypeBox2").value=""
+    }
+     document.getElementById("SearchBtn").style.visibility="hidden"
+    document.getElementById("categories").style.visibility="hidden"
+    const name1 = document.getElementById("tags")
+    document.getElementById("Close").onclick = function(){
+        document.getElementById("categories").style.visibility="hidden"
+    }
+    document.getElementById("categories").style.visibility="hidden"
+    document.getElementById("Scripts").onclick = function(){
+            document.getElementById("categories").style.visibility="hidden"
+        }
+document.getElementById("Scripts").onclick = function(){
+    document.getElementById("categories").style.visibility="visible"
+
+}
+document.getElementById("Alls1").onclick = function(){
+    document.getElementById("tagss").href="https://sharkcores.github.io/ScriptsMobile/";
+    document.getElementById("Scripts").innerHTML="All Scripts"
+    document.getElementById("categories").style.visibility="hidden"
+  
+}
+document.getElementById("Alls2").onclick = function(){
+    console.log("Link set")
+    document.getElementById("Scripts").innerHTML="Bypass Scripts"
+     document.getElementById("tagss").href="https://sharkcores.github.io/bypassScriptsMobile/";
+     document.getElementById("categories").style.visibility="hidden"
+}
+document.getElementById("tags").onmouseenter = function(){
+    document.getElementById("categories").style.visibility="hidden"
+}
+document.getElementById("awd").onclick = function(){
+    if(document.getElementById("TypeBox2").value=="bypass scripts"){
+        document.getElementById("fakenews").href="https://sharkcores.github.io/bypassScriptsMobile/"
+        document.getElementById("SearchBtn").style.visibility="visible"
+        document.getElementById("TypeBox2").style.width="140px"
+        document.getElementById("TypeBox2").style.marginLeft="-60px"
+        document.getElementById("awd").innerHTML="Available"
+        setTimeout(function() {
+  document.getElementById("awd").innerHTML="Check";
+}, 1000);
+    }
+    else if(document.getElementById("TypeBox2").value=="all scripts"){
+        document.getElementById("fakenews").href="https://sharkcores.github.io/ScriptsMobile/"
+        document.getElementById("SearchBtn").style.visibility="visible"
+        document.getElementById("TypeBox2").style.width="140px"
+        document.getElementById("TypeBox2").style.marginLeft="-60px"
+        document.getElementById("awd").innerHTML="Available"
+        setTimeout(function() {
+  document.getElementById("awd").innerHTML="Check";
+}, 1000);
+
+    }
+    else(document.getElementById("awd").innerHTML="Invalid", 
+    document.getElementById("TypeBox2").style.width="200px",
+    document.getElementById("TypeBox2").style.marginLeft="0px", 
+    document.getElementById("SearchBtn").style.visibility="hidden",
+    setTimeout(function() {
+  document.getElementById("awd").innerHTML="Check";
+}, 1000)
+    )
+}
+</script>
 </body>
 </html>
